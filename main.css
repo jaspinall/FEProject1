@@ -109,7 +109,7 @@ header {
 
 .top {
   width: 100vw;
-  background-image: url("images/guggenheim.jpg");
+  background-image: url("logos/guggenheim.jpg");
   background-size: cover;
   min-height: 300px;
   margin-top: 25px;
