@@ -8,6 +8,8 @@ body, html {
 img {
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 body, .nav {
@@ -125,6 +127,31 @@ header {
 
 /*
  *
+ * Projects
+ *
+ */
+
+#projects {
+  text-align: center;
+  font-size: 0.9em;
+  color: black;
+  background-color: grey;
+}
+
+#projects_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.project_block {
+  width: 350px;
+  font-size: 1.5em;
+  color: #A1A1A3;
+  text-align: center;
+}
+
+/*
+ *
  * Resume
  *
  */
@@ -143,6 +170,8 @@ header {
   text-align: center;
   padding-top: 50px;
 }
+
+
 
 
 
