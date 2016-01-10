@@ -55,8 +55,9 @@ header {
 }
 
 #header_logo {
-  height: 72px;
+  height: 50px;
   display: inline-block;
+  margin-top: 15px;
 }
 
 #header_logo a {
@@ -135,19 +136,25 @@ header {
   text-align: center;
   font-size: 0.9em;
   color: black;
-  background-color: grey;
+  background-color: #8e8e8e;
+  padding-top: 25px;
 }
 
 #projects_container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
 .project_block {
-  width: 350px;
-  font-size: 1.5em;
-  color: #A1A1A3;
+  width: 100%;
   text-align: center;
+  padding-bottom: 24px;
+}
+
+.project_block p {
+  display: inline-block;
 }
 
 /*
@@ -160,15 +167,13 @@ header {
   text-align: center;
   font-size: 0.9em;
   color: black;
-  background-color: grey;
+  background-color: #747477;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
-.lead {
-  width: 100%;
-  font-size: 1.5em;
-  color: #A1A1A3;
-  text-align: center;
-  padding-top: 50px;
+.resume_block{
+  margin: 10px;
 }
 
 
@@ -183,7 +188,6 @@ header {
 
 footer {
   border-top: 1px solid #E0E0E0;
-  padding: 1em;
   width: 100%;
 }
 

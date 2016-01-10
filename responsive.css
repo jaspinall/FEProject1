@@ -8,7 +8,7 @@
 }
 
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 650px) {
   header {
     height: 5px;
   }
@@ -72,19 +72,40 @@
 
   .resume_block {
     width: 180px;
-    padding: 10px;
   }
 
   .resume_ext_desc {
     display: none;
   }
+
+  .project_block h4 {
+    display: none;
+  }
 }
 
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 651px) {
   main, footer, header, .top {
-    width: 850px;
+    width: 90vw;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 850px) {
+
+  .project_block {
+    width: 250px;
+    margin-left: calc((90vw - 750px)/6);
+    margin-right: calc((90vw - 750px)/6);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .project_block {
+    width: 325px;
+    margin-left: calc((90vw - 975px)/6);
+    margin-right: calc((90vw - 975px)/6);
   }
 }
