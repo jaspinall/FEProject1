@@ -1,11 +1,3 @@
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header__menu {
-  display: none;
-}
 
 
 @media screen and (max-width: 650px) {
@@ -33,9 +25,9 @@
   }
   .nav__item {
     display: list-item;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #E0E0E0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
     width: 100%;
     text-align: left;
     font-size: 0.8em;
@@ -47,7 +39,7 @@
   }
   .header__menu svg {
     width: 32px;
-    fill: #E0E0E0;
+    fill: #e0e0e0;
     padding-bottom: 5px;
   }
 
@@ -89,6 +81,10 @@
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  footer a {
+    padding: 3em;
   }
 }
 

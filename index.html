@@ -9,27 +9,25 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
   </head>
+
   <body>
 
     <header>
         <a href="#">
           <img src="logos/logo.svg" onmouseover="this.src='logos/logo2.svg'" onmouseout="this.src='logos/logo.svg'" id="header_logo"/>
         </a>
-
         <a id="menu" class="header__menu">
           <svg xmlns="" viewBox="0 0 24 24">
             <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
           </svg>
         </a>
-
-
-    <nav id="drawer" class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#">Projects</a></li>
-        <li class="nav__item"><a href="#">Resume</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="drawer" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#projects">Projects</a></li>
+          <li class="nav__item"><a href="#resume">Resume</a></li>
+          <li class="nav__item"><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
       <section class="top">
@@ -41,53 +39,50 @@
       </section>
 
     <main>
-
-    <div id="projects">
-      <h1>Projects</h1>
-      <div id="projects_container" class="container">
-        <div class="project_block">
-           <a target="blank" href="https://github.com/jaspinall/weather">
-           <picture class="project_image">
-              <source media="(min-width: 850px)" srcset="images/weather-800_medium.jpg" />
-              <source media="(min-width: 650px)" srcset="images/weather1.jpg" />
-              <img src="images/weather-400_small.jpg" alt="Weather">
-          </picture>
-          </a>
-          <h3>Weather Finder</h3>
-          <h4>Scraper using PHP</h4>
-            <p><a target="blank" href="https://github.com/jaspinall/weather">GitHub</a></p>
-            <p><a target="blank" href="http://www.juliaaspinall.com/weather/weather.php">Live Demo</a></p>
-        </div>
-        <div class="project_block">
-           <a target="blank" href="https://github.com/jaspinall/diaryproject">
-           <picture class="project_image">
-              <source media="(min-width: 850px)" srcset="images/diary-800_medium.jpg" />
-              <source media="(min-width: 650px)" srcset="images/diary1.jpg" />
-              <img src="images/diary-400_small.jpg" alt="Diary and Pen">
-          </picture>
-          </a>
-          <h3>Secret Diary Project</h3>
-          <h4>Online diary using MySQL</h4>
-            <p><a target="blank" href="https://github.com/jaspinall/diaryproject">GitHub</a></p>
-            <p><a target="blank" href="http://www.juliaaspinall.com/diary/index.php">Live Demo</a></p>
-        </div>
-        <div class="project_block">
-           <a target="blank" href="http://www.juliaaspinall.com/contact/email.php">
-           <picture class="project_image">
-              <source media="(min-width: 850px)" srcset="images/mail-1600_large.jpg" />
-              <source media="(min-width: 650px)" srcset="images/mail1.jpg" />
-              <img src="images/mail-400_small.jpg" alt="Diary and Pen">
-          </picture>
-          </a>
-          <h3>Contact Form</h3>
-          <h4>Bootstrap contact form</h4>
-            <p><a target="blank" href="https://github.com/jaspinall/contactform">GitHub</a></p>
-            <p><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Live Demo</a></p>
+      <div id="projects">
+        <h1>Projects</h1>
+        <div id="projects_container" class="container">
+          <div class="project_block">
+             <a target="blank" href="https://github.com/jaspinall/weather">
+             <picture class="project_image">
+                <source media="(min-width: 850px)" srcset="images/weather-800_medium.jpg" />
+                <source media="(min-width: 650px)" srcset="images/weather1.jpg" />
+                <img src="images/weather-400_small.jpg" alt="Weather">
+            </picture>
+            </a>
+            <h3>Weather Finder</h3>
+            <h4>Scraper using PHP</h4>
+              <p><a target="blank" href="https://github.com/jaspinall/weather">GitHub</a></p>
+              <p><a target="blank" href="http://www.juliaaspinall.com/weather/weather.php">Live Demo</a></p>
+          </div>
+          <div class="project_block">
+             <a target="blank" href="https://github.com/jaspinall/diaryproject">
+             <picture class="project_image">
+                <source media="(min-width: 850px)" srcset="images/diary-800_medium.jpg" />
+                <source media="(min-width: 650px)" srcset="images/diary1.jpg" />
+                <img src="images/diary-400_small.jpg" alt="Diary and Pen">
+            </picture>
+            </a>
+            <h3>Secret Diary Project</h3>
+            <h4>Online diary using MySQL</h4>
+              <p><a target="blank" href="https://github.com/jaspinall/diaryproject">GitHub</a></p>
+              <p><a target="blank" href="http://www.juliaaspinall.com/diary/index.php">Live Demo</a></p>
+          </div>
+          <div class="project_block">
+             <a target="blank" href="http://www.juliaaspinall.com/contact/email.php">
+             <picture class="project_image">
+                <source media="(min-width: 850px)" srcset="images/mail-1600_large.jpg" />
+                <source media="(min-width: 650px)" srcset="images/mail1.jpg" />
+                <img src="images/mail-400_small.jpg" alt="Mailbox">
+            </picture>
+            </a>
+            <h3>Contact Form</h3>
+            <h4>Bootstrap contact form</h4>
+              <p><a target="blank" href="https://github.com/jaspinall/contactform">GitHub</a></p>
+              <p><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Live Demo</a></p>
+          </div>
         </div>
       </div>
-    </div>
-
-
 
       <div id="resume">
         <h1>Resume</h1>
@@ -112,11 +107,9 @@
     </main>
 
       <footer>
-        <ul>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Follow us on Twitter</a></li>
-          <li><a href="#">RSS</a></li>
-        </ul>
+          <a target="blank" class="zocial-linkedin" href="https://www.linkedin.com/in/julia-aspinall-37049b17"></a>
+          <a target="blank" class="zocial-github" href="https://github.com/jaspinall"></a>
+          <a target="blank" class="zocial-gmail" href="http://www.juliaaspinall.com/contact/email.php"></a>
       </footer>
 
     <script>
