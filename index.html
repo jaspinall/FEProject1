@@ -1,133 +1,148 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Julia Stefanczyk | Front-end Developer</title>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:300,400,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="responsive.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Julia Stefanczyk | Front-end Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
 
-  <body>
+<body>
 
-    <header>
-        <a href="#">
-          <img src="logos/logo.svg" onmouseover="this.src='logos/logo2.svg'" onmouseout="this.src='logos/logo.svg'" id="header_logo"/>
-        </a>
-        <a id="menu" class="header__menu">
-          <svg xmlns="" viewBox="0 0 24 24">
-            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-          </svg>
-        </a>
-      <nav id="drawer" class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#projects">Projects</a></li>
-          <li class="nav__item"><a href="#resume">Resume</a></li>
-          <li class="nav__item"><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <a class="logo" href="#">
+      <img src="logos/logo.svg" onmouseover="this.src='logos/logo2.svg'" onmouseout="this.src='logos/logo.svg'" alt="spiral"/>
+    </a>
 
-      <section class="top">
-        <div class="lead">
-          <h2>Julia Stefanczyk</h2>
-          <h4>Front-End Developer</h4>
-          <h4>Responsive Design, Javascript, JQuery</h4>
+    <a class="menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
+    </a>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#resume">Resume</a></li>
+        <li class="nav-item"><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="top">
+    <div class="lead">
+      <h2>Julia Stefanczyk</h2>
+      <h4>Front-End Developer</h4>
+      <h4>Responsive Design, Javascript, JQuery</h4>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="projects">
+      <h1>Projects</h1>
+
+      <div class="projects-container container">
+
+        <div class="project-block">
+          <a target="blank" href="https://github.com/jaspinall/weather">
+          <picture class="project-image">
+            <source media="(min-width: 850px)" srcset="images/weather-800_medium.jpg" />
+            <source media="(min-width: 650px)" srcset="images/weather1.jpg" />
+            <img src="images/weather-400_small.jpg" alt="Weather">
+          </picture>
+          </a>
+          <h3>Weather Finder</h3>
+          <h4>Scraper using PHP</h4>
+            <p><a target="blank" href="https://github.com/jaspinall/weather">GitHub</a></p>
+            <p><a target="blank" href="http://www.juliaaspinall.com/weather/weather.php">Live Demo</a></p>
         </div>
-      </section>
 
-    <main>
-      <div id="projects">
-        <h1>Projects</h1>
-        <div id="projects_container" class="container">
-          <div class="project_block">
-             <a target="blank" href="https://github.com/jaspinall/weather">
-             <picture class="project_image">
-                <source media="(min-width: 850px)" srcset="images/weather-800_medium.jpg" />
-                <source media="(min-width: 650px)" srcset="images/weather1.jpg" />
-                <img src="images/weather-400_small.jpg" alt="Weather">
-            </picture>
-            </a>
-            <h3>Weather Finder</h3>
-            <h4>Scraper using PHP</h4>
-              <p><a target="blank" href="https://github.com/jaspinall/weather">GitHub</a></p>
-              <p><a target="blank" href="http://www.juliaaspinall.com/weather/weather.php">Live Demo</a></p>
-          </div>
-          <div class="project_block">
-             <a target="blank" href="https://github.com/jaspinall/diaryproject">
-             <picture class="project_image">
-                <source media="(min-width: 850px)" srcset="images/diary-800_medium.jpg" />
-                <source media="(min-width: 650px)" srcset="images/diary1.jpg" />
-                <img src="images/diary-400_small.jpg" alt="Diary and Pen">
-            </picture>
-            </a>
-            <h3>Secret Diary Project</h3>
-            <h4>Online diary using MySQL</h4>
-              <p><a target="blank" href="https://github.com/jaspinall/diaryproject">GitHub</a></p>
-              <p><a target="blank" href="http://www.juliaaspinall.com/diary/index.php">Live Demo</a></p>
-          </div>
-          <div class="project_block">
-             <a target="blank" href="http://www.juliaaspinall.com/contact/email.php">
-             <picture class="project_image">
-                <source media="(min-width: 850px)" srcset="images/mail-1600_large.jpg" />
-                <source media="(min-width: 650px)" srcset="images/mail1.jpg" />
-                <img src="images/mail-400_small.jpg" alt="Mailbox">
-            </picture>
-            </a>
-            <h3>Contact Form</h3>
-            <h4>Bootstrap contact form</h4>
-              <p><a target="blank" href="https://github.com/jaspinall/contactform">GitHub</a></p>
-              <p><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Live Demo</a></p>
-          </div>
+        <div class="project-block">
+          <a target="blank" href="https://github.com/jaspinall/diaryproject">
+          <picture class="project-image">
+            <source media="(min-width: 850px)" srcset="images/diary-800_medium.jpg" />
+            <source media="(min-width: 650px)" srcset="images/diary1.jpg" />
+            <img src="images/diary-400_small.jpg" alt="Diary and Pen">
+          </picture>
+          </a>
+          <h3>Secret Diary Project</h3>
+          <h4>Online diary using MySQL</h4>
+            <p><a target="blank" href="https://github.com/jaspinall/diaryproject">GitHub</a></p>
+            <p><a target="blank" href="http://www.juliaaspinall.com/diary/index.php">Live Demo</a></p>
         </div>
+
+        <div class="project-block">
+          <a target="blank" href="http://www.juliaaspinall.com/contact/email.php">
+          <picture class="project-image">
+            <source media="(min-width: 850px)" srcset="images/mail-800_medium.jpg" />
+            <source media="(min-width: 650px)" srcset="images/mail1.jpg" />
+            <img src="images/mail-400_small.jpg" alt="Mailbox">
+          </picture>
+          </a>
+          <h3>Contact Form</h3>
+          <h4>Bootstrap contact form</h4>
+            <p><a target="blank" href="https://github.com/jaspinall/contactform">GitHub</a></p>
+            <p><a target="blank" href="http://www.juliaaspinall.com/contact/email.php">Live Demo</a></p>
+        </div>
+
       </div>
 
-      <div id="resume">
-        <h1>Resume</h1>
-        <div id="resume_container" class="container">
-          <div class="resume_block">
-            <h3>Content Project Manager</h3>
-            <h4>2015-present</h4>
-            <p class="resume_ext_desc">Led a team of content developers to build and launch online courses on-time and under-budget.</p>
-          </div>
-          <div class="resume_block">
-            <h3>Manager, Content Project Management</h3>
-            <h4>2014-2015</h4>
-            <p class="resume_ext_desc">Oversaw 20-30 K-12 professional development projects. Managed a team of project managers.</p>
-          </div>
-          <div class="resume_block">
-            <h3>Product Manager</h3>
-            <h4>2012-2014</h4>
-            <p class="resume_ext_desc">Led a development team to build features to enhance a K-12 assessment platform.</p>
-          </div>
-       </div>
-      </div>
-    </main>
+    </section>
 
-      <footer>
-          <a target="blank" class="zocial-linkedin" href="https://www.linkedin.com/in/julia-aspinall-37049b17"></a>
-          <a target="blank" class="zocial-github" href="https://github.com/jaspinall"></a>
-          <a target="blank" class="zocial-gmail" href="http://www.juliaaspinall.com/contact/email.php"></a>
-      </footer>
+    <section id="resume">
+      <h1>Resume</h1>
 
-    <script>
-      /*
-       * Open the drawer when the menu icon is clicked.
-       */
-      var menu = document.querySelector('#menu');
-      var main = document.querySelector('main');
-      var drawer = document.querySelector('.nav');
+      <div class="resume-container container">
 
-      menu.addEventListener('click', function(e) {
-        drawer.classList.toggle('open');
-        e.stopPropagation();
-      });
-      main.addEventListener('click', function() {
-        drawer.classList.remove('open');
-      });
+        <div class="resume-block">
+          <h3>Content Project Manager</h3>
+          <h4>2015-present</h4>
+          <p class="resume-ext-desc">Led a team of content developers to build and launch online courses on-time and under-budget.</p>
+        </div>
 
-    </script>
-  </body>
+        <div class="resume-block">
+          <h3>Manager, Content Project Management</h3>
+          <h4>2014-2015</h4>
+          <p class="resume-ext-desc">Oversaw 20-30 K-12 professional development projects. Managed a team of project managers.</p>
+        </div>
+
+        <div class="resume-block">
+          <h3>Product Manager</h3>
+          <h4>2012-2014</h4>
+          <p class="resume-ext-desc">Led a development team to build features to enhance a K-12 assessment platform.</p>
+        </div>
+
+     </div>
+     
+    </section>
+  </main>
+
+  <footer>
+    <a target="blank" class="zocial-linkedin" href="https://www.linkedin.com/in/julia-aspinall-37049b17"></a>
+    <a target="blank" class="zocial-github" href="https://github.com/jaspinall"></a>
+    <a target="blank" class="zocial-gmail" href="http://www.juliaaspinall.com/contact/email.php"></a>
+  </footer>
+
+  <script>
+    /*
+     * Open the drawer when the menu icon is clicked.
+     */
+    var menu = document.querySelector('.menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function(e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function() {
+      drawer.classList.remove('open');
+    });
+
+  </script>
+</body>
 </html>

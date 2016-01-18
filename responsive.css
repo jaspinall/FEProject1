@@ -1,12 +1,14 @@
-
-
 @media screen and (max-width: 650px) {
+  
   header {
     height: 5px;
   }
 
-  #header_logo {
-    display: none;
+  .logo {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 3px;
   }
 
   .nav {
@@ -19,37 +21,39 @@
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
   }
+
   .nav.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
-  .nav__item {
+
+  .nav-item {
     display: list-item;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0 15px;
     border-bottom: 1px solid #e0e0e0;
     width: 100%;
     text-align: left;
     font-size: 0.8em;
   }
-  .header__menu {
+
+  .menu {
     display: inline-block;
     position: absolute;
     right: 0;
   }
-  .header__menu svg {
+  .menu svg {
     width: 32px;
-    fill: #e0e0e0;
+    fill: #E0E0E0;
     padding-bottom: 5px;
   }
 
   .top {
-  min-height: 50px;
+    min-height: 50px;
   }
 
  .lead {
-  font-size: 1em;
-  padding: 20px;
+    font-size: 1em;
+    padding: 20px;
   }
 
   #resume {
@@ -57,27 +61,30 @@
     padding-bottom: 15px;
   }
 
-  #resume_container {
+  .resume-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .resume_block {
+  .resume-block {
     width: 180px;
   }
 
-  .resume_ext_desc {
+  .resume-ext-desc {
     display: none;
   }
 
-  .project_block h4 {
+  .project-block h4 {
     display: none;
   }
 }
 
 
 @media screen and (min-width: 651px) {
-  main, footer, header, .top {
+  main,
+  footer,
+  header,
+  .top {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
@@ -90,7 +97,14 @@
 
 @media screen and (min-width: 850px) {
 
-  .project_block {
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .project-block {
     width: 250px;
     margin-left: calc((90vw - 750px)/6);
     margin-right: calc((90vw - 750px)/6);
@@ -99,7 +113,7 @@
 
 @media screen and (min-width: 1150px) {
 
-  .project_block {
+  .project-block {
     width: 325px;
     margin-left: calc((90vw - 975px)/6);
     margin-right: calc((90vw - 975px)/6);
